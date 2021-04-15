@@ -1,4 +1,4 @@
-# House Part Web App
+# House Party WebApp
 
 ## Setup & Installtion
 
