@@ -18,7 +18,7 @@ export default class RoomJoinPage extends Component {
       <Grid container spacing={1}>
         <Grid item xs={12} align="center">
           <Typography variant="h4" component="h4">
-            Join a Room
+            Join Room
           </Typography>
         </Grid>
         <Grid item xs={12} align="center">
