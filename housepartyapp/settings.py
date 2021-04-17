@@ -114,11 +114,13 @@ WSGI_APPLICATION = 'housepartyapp.wsgi.application'
 #    }
 #}
 #_____________________________________________________________________________
+DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
+
 if DEVELOPMENT_MODE is True:
     DATABASES = {
         "default": {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         }
     }
 elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
@@ -171,3 +173,6 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+
+# DJANGO_SECRET_KEY from Digital Ocean: z7@!24Eg!Lc^8kZKeb*N4R8?yBn=r#uk
