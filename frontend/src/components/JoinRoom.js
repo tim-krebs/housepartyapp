@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { TextField, Button, Grid, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
-export default class RoomJoinPage extends Component {
+export default class JoinRoom extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +18,7 @@ export default class RoomJoinPage extends Component {
       <Grid container spacing={1}>
         <Grid item xs={12} align="center">
           <Typography variant="h4" component="h4">
-            Join Room
+            Join a Room
           </Typography>
         </Grid>
         <Grid item xs={12} align="center">

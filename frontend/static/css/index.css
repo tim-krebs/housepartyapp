@@ -3,6 +3,23 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #29d523);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+  color: white;
+  
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #main {
@@ -23,4 +40,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#gradient {
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
 }
